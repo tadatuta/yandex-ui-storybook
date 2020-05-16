@@ -1,0 +1,108 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Storybook</title><meta name="viewport" content="width=device-width,initial-scale=1"><style>html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
+    if (window.top !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('unable to connect to top frame for connecting dev tools');
+  }</script><link rel="shortcut icon" href="favicon.ico"><style>/* Reset storybook outline for all elements. */
+    div {
+        outline: none;
+    }
+
+    /* Colorize sidebar links and icons. */
+    section > a > .sidebar-item .sidebar-expander {
+        border-left-color: #5d636e;
+    }
+
+    section > div > a > .sidebar-item .sidebar-expander {
+        border-left-color: transparent;
+    }
+
+    .sidebar-item.selected {
+        color: #0078ff;
+        background-color: rgba(6, 122, 255, .05);
+    }
+
+    .sidebar-svg-icon path {
+        fill: rgba(93, 99, 110, .8);
+    }
+
+    .sidebar-item.selected .sidebar-svg-icon path {
+        fill: #0078ff;
+    }
+
+    .sidebar-subheading[class] {
+        margin-bottom: 5px;
+
+        color: rgba(91, 99, 111, .5);
+    }
+
+    /* Disable project logo. */
+    .sidebar-header[class] {
+        display: none;
+    }
+
+    .sidebar-container .simplebar-content {
+        margin-top: 10px;
+    }
+
+    /* Hack for i18n tabs. */
+    .simplebar-content a:nth-child(1) button {
+        font-size: 0;
+    }
+
+    .simplebar-content a:nth-child(1) button::before {
+        font-size: 13px;
+        content: 'Песочница';
+    }
+
+    /* Hack for i18n tabs. */
+    .simplebar-content a:nth-child(2) button {
+        font-size: 0;
+    }
+
+    .simplebar-content a:nth-child(2) button::before {
+        font-size: 13px;
+        content: 'Документация';
+    }
+
+    /* Custom visual for knobs controls. */
+    select[class],
+    textarea[class] {
+        padding: 0 10px;
+
+        border: 2px solid #d9d9d9;
+        border-radius: 4px;
+        box-shadow: none;
+
+        transition: background-color .15s linear;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    textarea[class] {
+        padding: 8px 10px;
+    }
+
+    select[class]:hover,
+    textarea[class]:hover {
+        border-color: #ccc;
+    }
+
+    select[class]:focus,
+    textarea[class]:focus {
+        border-color: #b3b3b3;
+        box-shadow: none;
+    }</style><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style></head><body><div id="root"></div><div id="docs-root"></div><script></script><script src="runtime~main.3e80324d580cf3681712.bundle.js"></script><script src="vendors~main.dc119ec777114cebd9b1.bundle.js"></script><script src="main.70e59b0eadecbd1b7e9b.bundle.js"></script></body></html>
